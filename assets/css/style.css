@@ -298,7 +298,7 @@ main {
   font-family: "Noto Sans JP", sans-serif;
   color: #333333;
   font-size: 1.6rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 2;
   letter-spacing: 0.06em;
 }
@@ -347,7 +347,7 @@ main {
   position: absolute;
   width: 10rem;
   height: 0.2rem;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   top: 2rem;
   left: 6.4rem;
 }
@@ -368,8 +368,8 @@ main {
   width: 3.6rem;
   height: 3.6rem;
   border-radius: 50%;
-  background-color: #F7F7F7;
-  border: 0.2rem solid #F7F7F7;
+  background-color: #f7f7f7;
+  border: 0.2rem solid #f7f7f7;
 }
 @media only screen and (max-width: 960px) {
   .topic-path ul li .topic-path__num {
@@ -395,30 +395,30 @@ main {
   }
 }
 .topic-path ul li .current-position__num {
-  color: #FFFFFF;
-  background-color: #96BFED;
-  border: 0.2rem solid #96BFED;
+  color: #ffffff;
+  background-color: #96bfed;
+  border: 0.2rem solid #96bfed;
 }
 .topic-path ul li .current-position__text {
-  color: #96BFED;
+  color: #96bfed;
 }
 .topic-path ul li .before-position__num {
-  color: #96BFED;
-  background-color: #FFFFFF;
-  border: 0.2rem solid #96BFED;
+  color: #96bfed;
+  background-color: #ffffff;
+  border: 0.2rem solid #96bfed;
 }
 .topic-path ul li .before-position__text {
-  color: #96BFED;
+  color: #96bfed;
 }
 .topic-path ul .before-position__path::after {
-  background-color: #96BFED !important;
+  background-color: #96bfed !important;
 }
 
 .common__btn {
   width: 26rem;
   height: 6rem;
   border-radius: 3rem;
-  background-color: #4078BC;
+  background-color: #4078bc;
   position: relative;
 }
 .common__btn:hover {
@@ -428,7 +428,7 @@ main {
   display: flex;
   align-items: center;
   font-family: "Noto Sans JP", sans-serif;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.19;
@@ -451,9 +451,17 @@ main {
     width: 21rem;
   }
 }
+@media only screen and (max-width: 960px) {
+  .common__btn--width {
+    width: 90%;
+  }
+}
 
 .tab__content--cell {
   margin-right: 0.5rem;
+  display: inline-block;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 .tab__content--cell--text {
   border-radius: 1.5rem;
@@ -487,11 +495,11 @@ main {
 }
 
 .side-tab__content {
-  margin: 3rem 1.5rem 2rem;
+  margin: 2.5rem 1.5rem 1.5rem;
 }
 @media only screen and (max-width: 1060px) {
   .side-tab__content {
-    margin: 3rem 1rem 2rem;
+    margin: 2.5rem 1rem 1.5rem;
   }
 }
 .side-tab__content--cell--text {
@@ -541,7 +549,7 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 3rem;
 }
 @media only screen and (max-width: 960px) {
@@ -566,11 +574,7 @@ main {
 .tooltip {
   width: 1.6rem;
   height: auto;
-  margin-left: 0.6rem;
-  position: absolute;
-  right: 6rem;
-  top: 50%;
-  transform: translateY(-50%);
+  margin-left: 1rem;
 }
 @media only screen and (max-width: 960px) {
   .tooltip {
@@ -619,7 +623,7 @@ main {
 }
 .tooltip__text p {
   font-family: "Noto Sans JP", sans-serif;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 1.1rem;
   font-weight: 500;
   line-height: 1.36;
@@ -632,6 +636,7 @@ main {
 }
 
 .page__info {
+  margin-top: 3rem;
   height: 3rem;
   background-image: linear-gradient(to right, #e8e8e8, #e8e8e8 0.4rem, transparent 0.4rem, transparent 0.6rem);
   background-size: 0.6rem 0.2rem;
@@ -695,9 +700,10 @@ main {
   font-family: "Roboto", sans-serif;
   color: #a5a5a5;
   font-size: 1.6rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.06em;
+  padding-bottom: 1rem;
 }
 .page__info .pagination__wrap .all_back a {
   color: #e8e8e8;
@@ -748,6 +754,9 @@ main {
 .page__info .pagination__wrap .all_jump a:hover {
   opacity: 0.6;
 }
+.page__info .pagination__wrap .current_page {
+  font-weight: 500;
+}
 .page__info .pagination__wrap .current_page a {
   color: #4078bc;
 }
@@ -795,7 +804,7 @@ main {
   display: flex;
   align-items: center;
   box-shadow: 0 0 0.6rem 0 rgba(175, 175, 175, 0.16);
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   position: fixed;
   top: 0;
   z-index: 1200;
@@ -990,7 +999,7 @@ main {
   font-family: "Noto Sans JP", sans-serif;
   color: #333333;
   font-size: 1.4rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.06em;
   border-radius: 0.2rem;
@@ -1009,7 +1018,7 @@ main {
   font-family: "Noto Sans JP", sans-serif;
   color: #333333;
   font-size: 1.4rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.06em;
 }
@@ -1036,14 +1045,14 @@ main {
   width: 0.4rem;
   height: 0.8rem;
   transform: rotate(40deg);
-  border-bottom: 0.2rem solid #4078BC;
-  border-right: 0.2rem solid #4078BC;
+  border-bottom: 0.2rem solid #4078bc;
+  border-right: 0.2rem solid #4078bc;
 }
 #index .condition__content--cell--text .condition__content--checkbox--text {
   font-family: "Noto Sans JP", sans-serif;
   color: #333333;
   font-size: 1.4rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.06em;
   position: relative;
@@ -1066,7 +1075,7 @@ main {
   height: 1.5rem;
   border: 0.1rem solid #e8e8e8;
   border-radius: 0.2rem;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
 }
 #index .condition__content--cell .checkbox__wrap {
   display: flex;
@@ -1091,6 +1100,22 @@ main {
 @media only screen and (max-width: 960px) {
   #index .condition__content--cell .checkbox__wrap label {
     width: 100%;
+  }
+}
+#index .condition__content--cell .checkbox__wrap label .tooltip {
+  position: absolute;
+  right: 7rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media only screen and (max-width: 960px) {
+  #index .condition__content--cell .checkbox__wrap label .tooltip {
+    right: 28rem;
+  }
+}
+@media only screen and (max-width: 520px) {
+  #index .condition__content--cell .checkbox__wrap label .tooltip {
+    right: 16.5rem;
   }
 }
 #index .condition__content--btn {
@@ -1173,12 +1198,9 @@ main {
 #index .job__content--recruit--under {
   position: relative;
 }
-#index .job__content--recruit .job__content--form .job__content--btn {
-  padding-bottom: 11rem;
-}
 #index .job__content--form {
   display: block;
-  margin-top: 4rem;
+  margin-top: 3.5rem;
 }
 #index .job__content--form .job__content--list .page__info:last-of-type {
   display: flex;
@@ -1218,7 +1240,7 @@ main {
 }
 #index .job__content--table tr th {
   width: 12rem;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   border: 0.1rem solid #efefef;
   text-align: left;
   padding-left: 2rem;
@@ -1264,10 +1286,10 @@ main {
   font-family: "Noto Sans JP", sans-serif;
   color: #333333;
   font-size: 1.4rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.06em;
-  padding: 1.5rem 2rem 2.1rem 2rem;
+  padding: 2rem;
 }
 @media only screen and (max-width: 1060px) {
   #index .job__content--table tr td {
@@ -1311,11 +1333,12 @@ main {
   left: 0;
   position: absolute;
   font-family: "Roboto", sans-serif;
-  color: #4078BC;
+  color: #4078bc;
   font-size: 1.8rem;
   font-weight: 500;
   line-height: 1.33;
   white-space: nowrap;
+  padding-bottom: 1rem;
 }
 @media only screen and (max-width: 960px) {
   #index .job__content--number {
@@ -1329,7 +1352,7 @@ main {
   left: 0;
   position: absolute;
   font-family: "Roboto", sans-serif;
-  color: #4078BC;
+  color: #4078bc;
   font-size: 1.8rem;
   font-weight: 500;
   line-height: 1.33;
@@ -1359,8 +1382,8 @@ main {
 }
 #index .job__content--btn--detail {
   margin: 0 0.5rem;
-  background-color: #FFFFFF;
-  border: 0.1rem solid #4078BC;
+  background-color: #ffffff;
+  border: 0.1rem solid #4078bc;
 }
 @media only screen and (max-width: 960px) {
   #index .job__content--btn--detail {
@@ -1368,7 +1391,8 @@ main {
   }
 }
 #index .job__content--btn--detail:hover {
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
+  border: 0.1rem solid #1a4374;
 }
 #index .job__content--btn--detail:hover a {
   color: #1a4374;
@@ -1376,7 +1400,7 @@ main {
 #index .job__content--btn--detail a {
   display: flex;
   align-items: center;
-  color: #4078BC;
+  color: #4078bc;
 }
 #index .job__content--btn--web {
   margin: 0 0.5rem;
@@ -1420,7 +1444,7 @@ main {
   border: none;
   border-radius: 3rem;
   font-family: "Noto Sans JP", sans-serif;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.1875;
@@ -1436,7 +1460,7 @@ main {
   font-weight: 500;
   line-height: 1.67;
   letter-spacing: 0.06em;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   margin-bottom: 3.1rem;
 }
 @media only screen and (max-width: 960px) {
@@ -1448,7 +1472,7 @@ main {
 }
 #index .job__content--title:hover {
   cursor: pointer;
-  color: #4078BC;
+  color: #4078bc;
 }
 #index .job__content--side {
   width: 27rem;
@@ -1469,7 +1493,7 @@ main {
   }
 }
 #index .job__content--side--all {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border: 0.1rem solid #efefef;
   border-radius: 1rem;
   overflow: hidden;
@@ -1505,7 +1529,7 @@ main {
   font-family: "Noto Sans JP", sans-serif;
   color: #333333;
   font-size: 1.4rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.06em;
 }
@@ -1543,14 +1567,14 @@ main {
   width: 0.4rem;
   height: 0.8rem;
   transform: rotate(40deg);
-  border-bottom: 0.2rem solid #4078BC;
-  border-right: 0.2rem solid #4078BC;
+  border-bottom: 0.2rem solid #4078bc;
+  border-right: 0.2rem solid #4078bc;
 }
 #index .job__content--side--all label .job__content--checkbox--text {
   font-family: "Noto Sans JP", sans-serif;
   color: #333333;
   font-size: 1.3rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.22;
   letter-spacing: 0.06em;
   position: relative;
@@ -1566,7 +1590,7 @@ main {
   height: 1.5rem;
   border: 0.1rem solid #e8e8e8;
   border-radius: 0.2rem;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
 }
 #index .job__content--side--all input {
   width: 23rem;
@@ -1581,7 +1605,7 @@ main {
   font-family: "Noto Sans JP", sans-serif;
   color: #333333;
   font-size: 1.3rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.85;
   letter-spacing: 0.06em;
 }
@@ -1606,6 +1630,7 @@ main {
 }
 #index .job__content--side--checkbox {
   margin-left: 1.5rem;
+  padding-right: 2rem;
 }
 #index .job__content--side--title {
   display: block;
@@ -1618,7 +1643,7 @@ main {
   font-weight: 500;
   line-height: 1.21;
   letter-spacing: 0.06em;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   border-bottom: 0.1rem solid #efefef;
 }
 @media screen and (min-width: 960px) {
@@ -1773,12 +1798,9 @@ main {
     height: auto;
   }
 }
-#index .detail__content--headline {
-  margin-bottom: 4rem;
-}
 @media only screen and (max-width: 960px) {
   #index .detail__content--headline {
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
   }
 }
 #index .detail__content--title {
@@ -1804,6 +1826,11 @@ main {
   background-position: left bottom;
   background-repeat: repeat-x;
 }
+@media only screen and (max-width: 960px) {
+  #index .detail__content--title--under {
+    padding-bottom: 2.3rem;
+  }
+}
 #index .detail__content--job--title {
   font-family: "Noto Sans JP", sans-serif;
   color: #333333;
@@ -1817,6 +1844,7 @@ main {
   #index .detail__content--job--title {
     font-size: 1.8rem;
     line-height: 1.56;
+    margin-top: 1rem;
   }
 }
 #index .detail__content--job--img {
@@ -1887,7 +1915,7 @@ main {
   font-family: "Noto Sans JP", sans-serif;
   color: #333333;
   font-size: 1.4rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.06em;
   margin-bottom: 8.6rem;
@@ -1944,7 +1972,7 @@ main {
   border: none;
   border-radius: 3rem;
   font-family: "Noto Sans JP", sans-serif;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.1875;
@@ -1975,7 +2003,7 @@ main {
 }
 #index .detail__content--table tr th {
   width: 35rem;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   border: 0.1rem solid #efefef;
   text-align: left;
   padding-left: 2rem;
@@ -2021,7 +2049,7 @@ main {
   font-family: "Noto Sans JP", sans-serif;
   color: #333333;
   font-size: 1.4rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.06em;
   padding: 1.5rem 2rem 1.5rem 2rem;
@@ -2110,7 +2138,7 @@ main {
   font-family: "Noto Sans JP", sans-serif;
   color: #333333;
   font-size: 1.4rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.06em;
   margin-bottom: 1.6rem;
@@ -2119,7 +2147,7 @@ main {
   font-family: "Noto Sans JP", sans-serif;
   color: #6c6c6c;
   font-size: 1.3rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.06em;
   margin-bottom: 6.5rem;
@@ -2140,7 +2168,7 @@ main {
   }
 }
 #index .detail__content--side--all {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border: 0.1rem solid #efefef;
   position: -webkit-sticky;
   position: sticky;
@@ -2169,7 +2197,7 @@ main {
   font-family: "Noto Sans JP", sans-serif;
   color: #333333;
   font-size: 1.4rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.06em;
 }
@@ -2183,7 +2211,7 @@ main {
   font-family: "Noto Sans JP", sans-serif;
   color: #6c6c6c;
   font-size: 1.4rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.06em;
   text-align: center;
@@ -2227,7 +2255,7 @@ main {
   border: none;
   border-radius: 3rem;
   font-family: "Noto Sans JP", sans-serif;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.1875;
@@ -2306,7 +2334,7 @@ main {
   font-family: "Noto Sans JP", sans-serif;
   color: #333333;
   font-size: 1.4rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.06em;
 }
@@ -2314,7 +2342,7 @@ main {
   width: 13rem;
   height: 13rem;
   border-radius: 1rem;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   position: relative;
 }
 @media only screen and (max-width: 1060px) {
@@ -2352,7 +2380,7 @@ main {
 #index .detail__content--flow--detail .flow__main span {
   display: inline-block;
   font-size: 1.2rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.33;
 }
 #index .detail__content--flow--detail:not(:last-of-type)::after {
@@ -2423,7 +2451,7 @@ main {
   border: none;
   border-radius: 3rem;
   font-family: "Noto Sans JP", sans-serif;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.1875;
@@ -2479,7 +2507,7 @@ main {
   border: none;
   border-radius: 3rem;
   font-family: "Noto Sans JP", sans-serif;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.1875;
@@ -2498,6 +2526,11 @@ main {
   left: -50vw;
   background: #fff;
   z-index: 200;
+}
+@media only screen and (max-width: 960px) {
+  #index .detail__content .section-title .common-title {
+    margin-bottom: 2.5rem;
+  }
 }
 #index .form__content--headline {
   margin-top: 6.3rem;
@@ -2569,7 +2602,7 @@ main {
 #index .form__content--form-wrapper table .form__content--cell--text textarea {
   box-sizing: border-box;
   border: 0.1rem solid #efefef;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   width: 33rem;
   height: 4.4rem;
   padding: 1.4rem 0 1.4rem 2rem;
@@ -2577,7 +2610,7 @@ main {
   font-family: "Noto Sans JP", sans-serif;
   color: #333333;
   font-size: 1.4rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.06em;
 }
@@ -2614,7 +2647,7 @@ main {
   background-color: #db5651;
   font-family: "Noto Sans JP", sans-serif;
   font-size: 1.3rem;
-  color: #FFFFFF;
+  color: #ffffff;
   line-height: 2rem;
   text-align: center;
   width: 4.4rem;
@@ -2630,7 +2663,7 @@ main {
   font-family: "Noto Sans JP", sans-serif;
   color: #333333;
   font-size: 1.3rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.85;
   letter-spacing: 0.06em;
   margin-top: 0.5rem;
@@ -2688,7 +2721,7 @@ main {
   width: 26rem;
   height: 6rem;
   border: none;
-  background-color: #4078BC;
+  background-color: #4078bc;
   border-radius: 3rem;
   display: block;
   margin: 0 auto;
@@ -2699,7 +2732,7 @@ main {
 }
 #index .form__content--form-wrapper .form__content--submit button span {
   font-family: "Noto Sans JP", sans-serif;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.1875;
@@ -2711,7 +2744,7 @@ main {
   top: 50%;
   right: 3rem;
   transform: translateY(-50%);
-  color: #FFFFFF;
+  color: #ffffff;
 }
 #index .complete__content--headline {
   margin-bottom: 6.3rem;
@@ -2761,9 +2794,9 @@ main {
 }
 .footer p {
   font-family: "Roboto", sans-serif;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 1.3rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.85;
   letter-spacing: 0.06em;
   line-height: 4.6rem;
